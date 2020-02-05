@@ -1,0 +1,33 @@
+{
+    "name": "cerrie",
+    "version": "1.0.0",
+    "description": "A typescript library for WC3 using Ceres",
+    "scripts": {
+        "preparedist": "copyfiles \"decl/*\" package.json dist && copyfiles -u 1 \"pure/**/*.*\" \"dist/ext\"",
+        "copycerrie": "copyfiles -u 2 -a \"cerriedist/cerrie/**/*.*\" dist",
+        "build": "npm run preparedist && ceres-tstl && copycerrie",
+        "prepublish": "npm run build",
+        "watch": "node watch.js",
+        "lint": "eslint . --ext .ts,.tsx,.js,.jsx"
+    },
+    "devDependencies": {
+        "@typescript-eslint/eslint-plugin": "^2.19.0",
+        "@typescript-eslint/parser": "^2.19.0",
+        "async": "^3.1.1",
+        "copyfiles": "^2.2.0",
+        "eslint": "^6.8.0",
+        "eslint-config-prettier": "^6.10.0",
+        "eslint-plugin-prettier": "^3.1.2",
+        "prettier": "^1.19.1",
+        "tsc-watch": "^4.1.0",
+        "typescript": "^3.7.5",
+        "typescript-to-lua": "^0.31.0"
+    },
+    "author": "",
+    "license": "MIT",
+    "dependencies": {
+        "ceres-decl": "^1.0.0",
+        "lua-types": "^2.7.0"
+    },
+    "types": "./cerrie.d.ts"
+}

@@ -1,0 +1,13 @@
+/*
+!cerrie
+!decl
+!pure
+!.gitignore
+!.prettierrc
+!package.json
+!package-lock.json
+!tsconfig.json
+!tslint.json
+!watch.js
+!.eslintrc.js
+!.eslintignore

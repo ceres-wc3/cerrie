@@ -1,0 +1,24 @@
+{
+    "compilerOptions": {
+        "target": "es6",
+        "lib": ["es6"],
+        "strict": true,
+        "noImplicitAny": true,
+        "noImplicitThis": true,
+        "noImplicitReturns": true,
+        "alwaysStrict": true,
+        "strictNullChecks": true,
+        "moduleResolution": "node",
+        "outDir": "cerriedist",
+        "rootDir": "./",
+        "types": ["lua-types/5.3", "ceres-decl/ceres"],
+        "declaration": true
+    },
+    "include": ["cerrie", "decl/cerrie.d.ts"],
+    "tstl": {
+        "luaTarget": "5.3",
+        "noHeader": true,
+        "luaLibImport": "require",
+        "noImplicitSelf": true
+    }
+}
