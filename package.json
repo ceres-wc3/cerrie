@@ -1,12 +1,14 @@
 {
     "name": "cerrie",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "A typescript library for WC3 using Ceres",
     "scripts": {
+        "clean": "rm -rf dist cerriedist",
         "preparedist": "copyfiles \"decl/*\" package.json dist && copyfiles -u 1 \"pure/**/*.*\" \"dist/ext\"",
         "copycerrie": "copyfiles -u 2 -a \"cerriedist/cerrie/**/*.*\" dist",
         "build": "npm run preparedist && ceres-tstl && npm run copycerrie",
-        "prepublish": "npm run build",
+        "prepublishOnly": "echo You should run 'npm run publish' instead. && return 1",
+        "publish": "npm run build && npm publish dist --ignore-scripts",
         "watch": "node watch.js",
         "lint": "eslint . --ext .ts,.tsx,.js,.jsx"
     },

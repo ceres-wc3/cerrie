@@ -19,7 +19,13 @@ Do note that providing a naive 1-to-1 binding to the Warcraft III api is a non-g
 
 To use Cerrie in your Warcraft III/TS project, see the example at [ceres-ts-template/cerrie](https://github.com/ceres-wc3/ceres-ts-template/tree/cerrie).
 
-It is important to include `import "cerrie/init"` in your `main` module, as well as add `node_modules` to `ceres.layout.srcDirectories`. All of this is already set up in the template repository.
+It is important to:
+
+-   Add `/// <reference types="cerrie/decl"/>` to your TypeScript entry points, or add `cerrie/decl` to your `types` array in `tsconfig.json`.
+-   Add `import "cerrie/init"` to your TypeScript entry points.
+-   Add `node_modules` to `ceres.layout.srcDirectories`.
+
+All of these steps are already performed in the template repository.
 
 ## Live Reload
 

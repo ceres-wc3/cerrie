@@ -3,4 +3,9 @@
 
 require("cerrie.core.util")
 
+compiletime(() => {
+    require("lualib_bundle")
+    require("cerrie.core.util")
+})
+
 export {}
