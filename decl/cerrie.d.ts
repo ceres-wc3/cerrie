@@ -1,4 +1,5 @@
 import "lua-types/5.3"
+import "ceres-decl/ceres"
 
 import "./native"
 import "./misc"

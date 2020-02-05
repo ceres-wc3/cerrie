@@ -5,7 +5,7 @@
     "scripts": {
         "preparedist": "copyfiles \"decl/*\" package.json dist && copyfiles -u 1 \"pure/**/*.*\" \"dist/ext\"",
         "copycerrie": "copyfiles -u 2 -a \"cerriedist/cerrie/**/*.*\" dist",
-        "build": "npm run preparedist && ceres-tstl && copycerrie",
+        "build": "npm run preparedist && ceres-tstl && npm run copycerrie",
         "prepublish": "npm run build",
         "watch": "node watch.js",
         "lint": "eslint . --ext .ts,.tsx,.js,.jsx"
