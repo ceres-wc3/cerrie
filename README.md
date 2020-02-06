@@ -21,7 +21,6 @@ To use Cerrie in your Warcraft III/TS project, see the example at [ceres-ts-temp
 
 It is important to:
 
--   Add `/// <reference types="cerrie/decl"/>` to your TypeScript entry points, or add `cerrie/decl` to your `types` array in `tsconfig.json`.
 -   Add `import "cerrie/init"` to your TypeScript entry points.
 -   Add `node_modules` to `ceres.layout.srcDirectories`.
 
