@@ -5,7 +5,6 @@ const playerNative = _G.Player
 class Player extends Handle<jplayer> {
     protected constructor(handle: jplayer, ctor: typeof Player) {
         super(handle, ctor as typeof Handle)
-        print(`constructed Player for ${GetPlayerId(handle)}:${GetHandleId(handle)}`)
     }
 
     static local: Player
@@ -15,7 +14,7 @@ class Player extends Handle<jplayer> {
         Player.init()
         const storage: Player[] = []
 
-        for (let i = 0; i < 4; i++) {
+        for (let i = 0; i < bj_MAX_PLAYERS; i++) {
             storage[i] = Player.of(playerNative(i))
         }
 

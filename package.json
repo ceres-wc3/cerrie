@@ -1,6 +1,6 @@
 {
     "name": "cerrie",
-    "version": "1.0.3",
+    "version": "1.0.4",
     "description": "A typescript library for WC3 using Ceres",
     "scripts": {
         "clean": "rm -rf dist cerriedist",
@@ -23,13 +23,12 @@
         "prettier": "^1.19.1",
         "tsc-watch": "^4.1.0",
         "typescript": "^3.7.5",
-        "typescript-to-lua": "^0.31.0"
+        "ceres-tstl": "0.31.0-patch1"
     },
     "author": "",
     "license": "MIT",
     "dependencies": {
         "ceres-decl": "^1.0.0",
         "lua-types": "^2.7.0"
-    },
-    "types": "./cerrie.d.ts"
+    }
 }
