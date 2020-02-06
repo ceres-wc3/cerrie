@@ -4,7 +4,7 @@
     "description": "A typescript library for WC3 using Ceres",
     "scripts": {
         "clean": "rm -rf dist cerriedist",
-        "preparedist": "copyfiles \"decl/*\" package.json dist && copyfiles -u 1 \"pure/**/*.*\" \"dist/ext\"",
+        "preparedist": "copyfiles package.json init.d.ts init.lua dist && copyfiles -u 1 \"decl/*.d.ts\" dist/decl && copyfiles -u 1 \"pure/**/*.*\" \"dist/ext\"",
         "copycerrie": "copyfiles -u 2 -a \"cerriedist/cerrie/**/*.*\" dist",
         "build": "npm run preparedist && ceres-tstl && npm run copycerrie",
         "prepublishOnly": "echo You should run 'npm run publish' instead. && return 1",

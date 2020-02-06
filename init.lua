@@ -1,0 +1,5 @@
+require("cerrie.core.util")
+compiletime(function()
+    require("lualib_bundle")
+    require("cerrie.core.util")
+end)

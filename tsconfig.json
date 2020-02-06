@@ -11,10 +11,9 @@
         "moduleResolution": "node",
         "outDir": "cerriedist",
         "rootDir": "./",
-        "types": [],
         "declaration": true
     },
-    "include": ["cerrie", "decl/cerrie.d.ts"],
+    "include": ["decl/index.d.ts", "cerrie/"],
     "tstl": {
         "luaTarget": "5.3",
         "noHeader": true,

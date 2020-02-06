@@ -12,3 +12,5 @@
 !.eslintrc.js
 !.eslintignore
 !README.md
+!init.d.ts
+!init.lua
