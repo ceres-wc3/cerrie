@@ -1,6 +1,6 @@
 {
     "name": "cerrie",
-    "version": "1.0.2",
+    "version": "1.0.3",
     "description": "A typescript library for WC3 using Ceres",
     "scripts": {
         "clean": "rm -rf dist cerriedist",

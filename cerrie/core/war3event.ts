@@ -376,8 +376,6 @@ export namespace U {
     const UNDEFEND_ORDER_ID = 852056
 
     const ABILITY_ID = compiletime(() => {
-        require("tsstd.core.util")
-
         const abilityId = util.idgen.abil()
 
         if (currentMap != undefined) {
